@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>企业介绍</title>
+    <!--外部链接CSS-->
+    <!--<link href="css/homw.css" type="text/css" rel="stylesheet">-->
+    <!--<link href="css/style.css" type="text/css" rel="stylesheet">-->
+    <style>
+        *{margin:0px; padding:0px;}
+        body{
+            margin: 0px auto;
+            font-size: 12px;
+        }
+        .clear{
+            clear: both;
+        }
+        .container{
+            width: 900px;
+            margin: 0px auto;
+        }
+        img{
+            vertical-align: middle;
+        }
+        a{
+            color: #9a9a9a;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #ff6600;
+        }
+        ul{
+            list-style: none;
+            margin: 10px;
+            padding: 0px;
+        }
+        .top{
+            height: 63px;
+            border-bottom: solid 1px #dbdbdb;
+            padding-top: 10px;
+        }
+        .logo{
+            float: left;
+        }
+        .nav_samll{
+            float: right;
+        }
+        .nav_samll li{
+            display: block;
+            float: left;
+            padding: 10px;
+        }
+        .nav{
+            height: 37px;
+            line-height: 37px;
+            border-bottom: solid 2px #ff6600;
+            overflow: hidden;
+        }
+        .nav li{
+            float: left;
+            width: 90px;
+            padding: 0 5px 0 5px;
+        }
+        .nav a{
+            height: 37px;
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            color: #000000;
+        }
+        .nav a:hover{
+            color: #ff6600;
+            background: url(image/sy_s01.png) no-repeat bottom;
+        }
+        .nav img{
+            position:relative;
+            left: 50px;
+        }
+        .active{
+            color: #ff6600;
+            background: url(image/sy_s01.png) no-repeat bottom;
+        }
+        .banner img{
+            width: 100%;
+            height: 400px;
+        }
+        .banner_small_list{
+            height: 80px;
+            background-color: #f4f4f4;
+            border-bottom: solid 1px #d4d4d4;
+        }
+        .btn_left{
+            float:left;
+            margin-right: 30px;
+        }
+        .btn_right{
+            float: right;
+        }
+        .banner_small_list_pic{
+            width: 1000px;
+            margin: 0px auto;
+            padding-top: 6px;
+        }
+        .banner_small_list_pic li{
+            display:block;
+            float: left;
+            margin-right: 11px;
+            position: relative;
+        }
+        .banner_small_list_pic li:hover{
+            border:solid 2px #ff780d;
+        }
+        .banner_small_list_pic li:hover i{
+            position: absolute;
+            left: 73px;
+            width:7px;
+            height: 4px;
+            display: block;
+            background-image: url(image/jt.png);
+        }
+        .mar{
+            margin: 45px auto;
+        }
+        .news{
+            width: 435px;
+        }
+        .news_title{
+            position: relative;
+            height: 25px;
+            border-top: 1px solid #dbdbdb;
+            padding: 5px 0px;
+        }
+        .news_title span{
+            position: absolute;
+            top: -1px;
+            height: 43px;
+            width: 80px;
+            text-align: center;
+            display: block;
+            font-size: 16px;
+            border-top: 1px solid #ff6600;
+        }
+        .news_title a{
+            dispaly: block;
+            float: right;
+            background-color: #c3c3c3;
+            padding: 2px 8px;
+            color: #ffffff;
+            border-radius: 3px;
+        }
+        .news_content dt{
+            border-bottom: 1px dashed #dbdbdb;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+        .news_text{
+            width:225px;
+            line-height: 23px;
+        }
+        .news_text span{
+            display: block;
+            color: #696969;
+        }
+        .blu{
+            color: #5a89ba;
+        }
+        .news_content dd{
+            line-height: 28px;
+            /*background-image: url(image/dd_s01.png);*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: left center;*/
+            background: url(image/dd_s01.png) no-repeat left center;
+            padding-left:10px;
+            color: #9a9a9a;
+        }
+        .link{
+            border: solid #d4d4d4 1px;
+            padding: 10px;
+        }
+        .link a{
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+        .link i{
+            display:block;
+            width: 15px;
+            height: 15px;
+            background-color: #9a9a9a;
+            font-size: 20px;
+            float: right;
+            text-align: center;
+            color: #ffffff;
+            border-radius:50%;
+        }
+        .foot{
+            background-color: #d6d6d6;
+            margin-top:15px;
+            text-align: center;
+            line-height:24px;
+        }
+        .foot_map{
+            float: right;
+            color: #9a9a9a;
+            background-color: white;
+            height: 21px;
+            width: 80px;
+            margin-top: -3px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+  <!--头部-->
+  <div class="top">
+      <div class="container">
+          <div class="logo">
+              <img src="image/logo.png" />
+          </div>
+          <div class="nav_samll">
+              <ul>
+                  <li><i><img src="image/dd_s01.png"/></i><a href="https://www.baidu.com/" target="_blank"> 中文</a></li>
+                  <li><i><img src="image/dd_s01.png"/></i><a href="https://www.baidu.com/" target="_blank"> Einglish</a></li>
+                  <li><i><img src="image/dd_s01.png"/></i><a href="https://www.baidu.com/" target="_blank"> 百度</a></li>
+                  <li><i><img src="image/dd_s01.png"/></i><a href="https://www.baidu.com/" target="_blank"> 百度</a></li>
+                  <li><i><img src="image/dd_s01.png"/></i><a href="https://www.baidu.com/" target="_blank"> 百度</a></li>
+                  <li><i><img src="image/dd_s01.png"/></i><a href="https://www.baidu.com/" target="_blank"> 百度</a></li>
+                  <li><i><img src="image/dd_s01.png"/></i><a href="https://www.baidu.com/" target="_blank"> 百度</a></li>
+                  <li><a>|</a></li>
+                  <li><img src="image/ip_s01.png" /><a href="https://www.baidu.com/"> 手机版</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <!--导航-->
+  <div class="nav">
+      <ul class="container">
+          <li><a href="#" class="active" style="color: #ff6600;"><b>首页</b></a></li>
+          <li><a href="#">产品</a></li>
+          <li><a href="#">公司</a></li>
+          <li><a href="#">开放合作</a></li>
+          <li><a href="#">招聘</a></li>
+          <li><a href="#">帮助中心</a></li>
+          <li><a href="#">论坛</a></li>
+          <li><img src="image/fh_s01.png"/></li>
+      </ul>
+
+  </div>
+  <!--大图切换-->
+  <div class="banner">
+          <img src="image/ad_banner.png" />
+  </div>
+  <!--小图切换-->
+  <div class="banner_small_list">
+      <div class="container">
+          <span class="btn_left" style="cursor: pointer"><img src="image/ad_banner_samll_left.png" /></span>
+          <ul class="banner_small_list_pic">
+              <li><i></i><a href="#"><img src="image/ad_banner_samll_s01.png" /></a></li>
+              <li><i></i><a href="#"><img src="image/ad_banner_samll_s01.png" /></a></li>
+              <li><i></i><a href="#"><img src="image/ad_banner_samll_s02.png" /></a></li>
+              <li><i></i><a href="#"><img src="image/ad_banner_samll_s03.png" /></a></li>
+              <li><i></i><a href="#"><img src="image/ad_banner_samll_s04.png" /></a></li>
+          </ul>
+          <span class="btn_right" style="cursor: pointer"><img src="image/ad_banner_samll_right.png" /></span>
+      </div>
+  </div>
+  <!--新闻列表-->
+  <div class="container mar">
+      <div class="news btn_left">
+          <div class="news_title">
+              <span>新闻热点</span>
+              <a href="#">更多></a>
+          </div>
+          <dl class="news_content">
+              <dt>
+                  <img src="image/news_tp.png" />
+                  <div class="btn_right news_text">
+                      <h4>UC浏览器启用新LOGO寓意:智能、极速</h4>
+                      <p>2012-12-03</p>
+                      <span>新logo依旧使用UC吉祥物松鼠图案设计，寓意UC浏览器的优势:智能、极速、安全...</span>
+                      <a href="#" class="blu"><b>查看详情 >></b></a>
+                  </div>
+                          <div class="clear"></div>
+              </dt>
+              <dd>
+                  <a href="#">UC宣布Aandroid平台用户过亿，移动浏览器转型做平台</a>
+                  <span class="btn_right">2012-12-06</span>
+              </dd>
+              <dd>
+                  <a href="#">UC董事长俞永福：移动互联网最大好处是多元化</a>
+                  <span class="btn_right">2012-12-05</span>
+              </dd>
+              <dd>
+                  <a href="#">中国移动游戏与12580基地与优视科技签约</a>
+                  <span class="btn_right">2012-12-05</span>
+              </dd>
+              <dd>
+                  <a href="#">UC优视董事长俞永福减法制胜</a>
+                  <span class="btn_right">2012-12-04</span>
+              </dd>
+
+          </dl>
+      </div>
+      <div class="news btn_right">
+          <div class="news_title">
+                  <span>产品动态</span>
+                  <a href="#">更多></a>
+          </div>
+          <dl class="news_content">
+              <dt>
+                  <img src="image/news_s01.png" />
+                  <div class="btn_right news_text">
+                      <h4>来电通上线App Store提升用户通讯体验</h4>
+                      <p>2012-12-04</p>
+                      <span>UC优视宣布旗下通讯管理软件来电通正式登陆了苹果官方应用商店App Store...</span>
+                      <a href="#" class="blu"><b>查看详情 >></b></a>
+                  </div>
+                          <div class="clear"></div>
+              </dt>
+              <dd>
+                  <a href="#">UC力顶WP8 Lumia920行货上市预装UC两大产品</a>
+                  <span class="btn_right">2012-12-05</span>
+              </dd>
+              <dd>
+                  <a href="#">体验极速冲浪UC浏览器智能浏览器更新</a>
+                  <span class="btn_right">2012-12-04</span>
+              </dd>
+              <dd>
+                  <a href="#">正版来电通上线App Store提升用户通讯体验</a>
+                  <span class="btn_right">2012-12-04</span>
+              </dd>
+              <dd>
+                  <a href="#">UC代理海外手游混沌与秩序首战告捷</a>
+                  <span class="btn_right">2012-11-29</span>
+              </dd>
+          </dl>
+      </div>
+      <div class="clear"></div>
+  </div>
+  <!--友情链接-->
+  <div class="container link">
+      <span style="color: #9a9a9a;"> 友情链接：</span>
+      <a href="#">手机游戏 </a>|<a href="#">手机软件 </a>|<a href="#">历趣手机软件 </a>|
+      <a href="#">软吧手机软件 </a>|<a href="#">宝软网 </a>|<a href="#">应用汇 </a>|
+      <a href="#">安智网 </a>|<a href="#">雷锋网 </a>|<a href="#">91手机 </a>|
+      <a href="#">站长之家 </a>|<a href="#">站长网 </a>|<a href="#">游戏狗 </a>|
+      <a href="#">威锋网 </a>
+      <i>ˇ</i>
+  </div>
+  <!--网站底部版权信息-->
+  <div class="foot">
+      <div class="container">
+          <a href="#" class="foot_map">网站地图 ^</a>
+          <span style="color:#9a9a9a;">
+              <br/>UC优视 2004-2012©版权所有 增值电信业务经营许可证 粤ICP备09210879号 网络文化经营许可证：文网文[2010]176号
+              <br/>中华人民共和国互联网药品信息服务资格证：（粤）-非经营性-2011-0120
+          </span>
+      </div>
+  </div>
+</body>
+</html>
